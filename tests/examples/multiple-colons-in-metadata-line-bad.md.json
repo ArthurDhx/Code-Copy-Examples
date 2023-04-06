@@ -1,0 +1,3 @@
+{
+    "error": "There must be only one colon in a metadata line: category: foo: bar"
+}

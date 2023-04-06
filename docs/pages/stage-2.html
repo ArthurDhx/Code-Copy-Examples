@@ -1,0 +1,126 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="531932029368-ug3hmddvq6ueeass25ha03ebmdmio0kl.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<title>Code Examples to Copy, stage 2</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<a href="../index.html">Index</a>
+
+<h1>Code Examples to Copy, stage 2</h1>
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a id="signout" class="hidden" href="#">Sign out</a>
+
+<p id="errorUser" class="error">You are not registered and cannot track your progress</p>
+
+<p>This page has code examples for you to try out.
+In this stage, we add objects, arrays, and loops.</p>
+<p>Typing code helps you learn, so rather than giving you text to copy
+and paste the code is an image that you must read, hold in your mind,
+type in to your editor and then manually check for accuracy.</p>
+<p>When we type, we make mistakes and that's OK – finding what we've done
+wrong is part of programming so this is a useful experience.</p>
+<p>Always test your program with a few different inputs to see that it behaves as
+expected.</p>
+<p>As always we encourage your feedback on the process and the examples.</p>
+
+<section class="examples">
+
+<section data-stage="stage-2" data-example="1-multiply-by-adding.js.md">
+  <h2>Multiply by adding  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>We know that 7*3 = 3+3+3+3+3+3+3 = 21:</p>
+  <img alt="Multiply by adding" src="../img/stage-2-1-multiply-by-adding.js.png">
+  <h3>Extra challenges</h3>
+    <div><input class="checkbox hidden extra" type="checkbox"> Can you change the program to do exponentiation? 7^3 = 7*7*7 = 343.</div>
+</section>
+
+<section data-stage="stage-2" data-example="2-count-words.js.md">
+  <h2>Count words in a sentence  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Actually, we can just count the spaces between words:</p>
+  <img alt="Count words in a sentence" src="../img/stage-2-2-count-words.js.png">
+</section>
+
+<section data-stage="stage-2" data-example="3-count-words-better.js.md">
+  <h2>Count words more accurately  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Consecutive spaces confused the previous program, so here's a smarter one:</p>
+  <img alt="Count words more accurately" src="../img/stage-2-3-count-words-better.js.png">
+  <p>The program can be shorter. We can drop <code>foundFirstWord</code> if we
+pretend that there is a space before the sentence. Try it: set
+<code>previousWasSpace</code> to <code>true</code> at first, and remove
+<code>foundFirstWord</code> and the first <code>if</code>, only keep the
+<code>else</code> part.</p>
+</section>
+
+<section data-stage="stage-2" data-example="4-count-sentences.js.md">
+  <h2>Count sentences  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Let's assume that every sentence ends with a full stop, and sentences are
+separated by spaces:</p>
+  <img alt="Count sentences" src="../img/stage-2-4-count-sentences.js.png">
+  <p>Can you prevent counting full stops if there are no sentences?
+Can you make the program count sentences that end with &quot;?&quot; or &quot;!&quot; as well?</p>
+</section>
+
+<section data-stage="stage-2" data-example="5-remove-filename-extension.js.md">
+  <h2>Remove file name extension  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Operating systems hide file name extensions because they want to shield
+their users from complexities of different file types:</p>
+  <img alt="Remove file name extension" src="../img/stage-2-5-remove-filename-extension.js.png">
+</section>
+
+<section data-stage="stage-2" data-example="6-generate-random-words.js.md">
+  <h2>Generate random words  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Sometimes we need random text (learn about Lorem Ipsum):</p>
+  <img alt="Generate random words" src="../img/stage-2-6-generate-random-words.js.png">
+  <p>This program always adds a space after the last word. Can you change it so
+that unnecessary space isn't there?</p>
+</section>
+
+<section data-stage="stage-2" data-example="7-generate-random-sentences.js.md">
+  <h2>Generate random sentences  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Random words don't look great; sometimes we want random sentences.</p>
+  <img alt="Generate random sentences" src="../img/stage-2-7-generate-random-sentences.js.png">
+  <p>Can you somehow make this program output meaningful sentences? It could be
+easy to make the program to output sentences like &quot;Alex met Casey. Casey looked at Alex.&quot;</p>
+</section>
+
+<section data-stage="stage-2" data-example="8-nickbook.js.md">
+  <h2>Nick-book  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>In olden times, people would have phonebooks where they kept their
+contacts. Now nobody calls anymore, so let's keep track of our friends'
+online handles (<em>nicks</em>) instead.</p>
+<p>This program doesn't actually store the data, so as soon as we stop it, it
+will forget everyone. We'll learn about databases later.</p>
+  <img alt="Nick-book" src="../img/stage-2-8-nickbook.js.png">
+  <p>Can you make it say &quot;no matches found&quot; if a search fails? Can you make it
+say &quot;command not recognized&quot; when the user enters an unknown command?</p>
+<p>Can you add more commands? Useful ones might be to delete a person, to list
+known people in order in which we added them, in reverse order (from the
+newest contacts first), or even alphabetically (by nick and/or by name), but
+that's much more of a challenge now because we haven't talked about sorting
+yet.</p>
+</section>
+
+<h1>Advanced variations</h1>
+
+<section data-stage="stage-2" data-example="9-remove-filename-extension.js.md">
+  <h2>Remove file name extension easier  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Programming languages come with useful functionalities. Here's a shorter
+way to remove file name extensions with <code>lastIndexOf</code> and <code>substring</code>.</p>
+  <img alt="Remove file name extension easier" src="../img/stage-2-9-remove-filename-extension.js.png">
+</section>
+
+<section data-stage="stage-2" data-example="10-generate-sentences-with-functions.js.md">
+  <h2>Generate random sentences with less code repetition  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>When generating random sentences, we kept creating a random number (with
+different bounds) and so on; now a single function does it generically:</p>
+  <img alt="Generate random sentences with less code repetition" src="../img/stage-2-10-generate-sentences-with-functions.js.png">
+  <p>The code is a bit longer than the original, but it is arguably more
+readable and easier to write without making mistakes.</p>
+</section>
+
+</section>
+
+<script type=module src="../js/authentication.js"></script>

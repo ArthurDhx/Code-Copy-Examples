@@ -1,0 +1,41 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="531932029368-ug3hmddvq6ueeass25ha03ebmdmio0kl.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<title>Code Examples to Copy, Admin view</title>
+
+<link rel="stylesheet" href="style.css">
+
+<a href="../index.html">Back to Examples Index</a>
+
+<h1>Code Examples to Copy, Admin view</h1>
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a id="signout" href="#">Sign out</a>
+
+<p id="errorAdmin" class="error"></p>
+
+<div id="adminContent" class="hidden">
+  <div>
+    <h3>Add users (one per line)</h3>
+    <textarea id="addUser" name="addUser" rows="4" cols="50"></textarea>
+    <div><button id="textAreaButton">Add users</button></div>
+    <div id="errorEmail" class="error"></div>
+  </div>
+
+  <h3>List users</h3>
+  <table id="userTable" class="admin">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Number of completed examples</th>
+        <th>Number of completed extra challenges</th>
+        <th>Delete user</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<script type=module src="../js/admin.js"></script>

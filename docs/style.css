@@ -1,0 +1,130 @@
+:root {
+  --bg: white;
+  --fg: black;
+  --bg-code: #ddd;
+  --border-img: black;
+  --fg-error: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: black;
+    --fg: white;
+    --fg-error: red;
+    --bg-code: #333;
+  }
+
+  img {
+    /* employ Hopson's Gambit to invert images for dark mode */
+    filter: invert(100%) hue-rotate(180deg);
+  }
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 40em;
+  margin: auto;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+* {
+  line-height: 150%;
+}
+
+img {
+  display: block;
+  padding: 0;
+  border: thin solid var(--border-img);
+  border-radius: 0.5em;
+  margin: 1em 0;
+
+  /* The screenshots use 825px width, with 13px font size.
+   * To scale 13px font size to 1em, we need the width of (825/13)em.
+   */
+  width: 63.46153846rem;
+}
+
+.examples h1,
+.examples h2 {
+  margin-top: 3em;
+}
+
+.examples h1 {
+  width: calc(63.46153846rem + 1em);
+  max-width: 100%;
+  margin-left: -1em;
+  padding: 1em 0 1em 1em;
+  border: thick solid var(--fg);
+  border-width: thick 0 0 thin;
+  border-radius: 0.5em 0.5em 0 0;
+  box-sizing: border-box;
+}
+
+input[type="checkbox" i] {
+  height: 1.15rem;
+  width: 1.15rem;
+}
+
+.hidden {
+  display: none;
+}
+
+code {
+  background-color: var(--bg-code);
+  padding: 0.2em 0.3em;
+}
+
+a code {
+  padding: 0;
+  background-color: var(--bg);
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.error {
+  color: var(--fg-error);
+}
+
+/* admin table style */
+table.admin {
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+
+table.admin thead th,
+table.admin tfoot th {
+  color: black;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+table.admin caption {
+  padding: 0.5em;
+}
+
+table.admin td {
+  padding: 0.5em;
+  border: 1px solid lightgrey;
+  white-space: nowrap;
+}
+
+/* 88em is the width of the image plus the default left padding of the page if the text is centered.
+ * Under about 88em, the page would be too narrow, with big padding on the left and image off the screen.
+ */
+@media screen and (max-width: 88em) {
+  body {
+    max-width: none;
+    padding: 0.5em;
+  }
+
+  /* fit the extra heading on the narrow screen */
+  .examples h1 {
+    width: 63.46153846rem;
+    margin-left: 0;
+  }
+}

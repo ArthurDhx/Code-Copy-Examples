@@ -1,0 +1,21 @@
+{
+  "title": "Is a number even or odd?",
+  "imageAlt": "Is a number even or odd?",
+  "docLinks": [
+    {
+      "html": "the modulo operator <code>%</code>",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+    },
+    {
+      "html": "the strict equality operator <code>===</code>",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+    }
+  ],
+  "extras": [],
+  "metadata": {
+    "badges": [ "for-loop", "while-loop" ],
+    "category": "foobar",
+    "difficulty": "easy",
+    "extraHeading": "Advanced"
+  }
+}

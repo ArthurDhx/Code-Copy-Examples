@@ -1,0 +1,19 @@
+<!doctype html>
+<title>Show Length</title>
+
+<h1>Show Length</h1>
+
+<input placeholder="enter something…">
+<button>get length</button>
+<p id="output"></p>
+
+
+<script>
+  function getLength() {
+    const input = document.querySelector('input').value;
+    const output = document.querySelector('#output');
+    output.textContent = input.length;
+  }
+
+  document.querySelector('button').addEventListener('click', getLength);
+</script>

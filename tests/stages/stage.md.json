@@ -1,0 +1,11 @@
+{
+    "title": "Is a number even or odd?",
+    "docLinks": [
+      {
+        "html": "the modulo operator <code>%</code>",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+      }
+    ],
+    "description": "<p>any description goes here, including <strong>formatting</strong></p>"
+  }
+  

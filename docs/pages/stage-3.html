@@ -1,0 +1,132 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="531932029368-ug3hmddvq6ueeass25ha03ebmdmio0kl.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<title>Code Examples to Copy, stage 3</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<a href="../index.html">Index</a>
+
+<h1>Code Examples to Copy, stage 3</h1>
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a id="signout" class="hidden" href="#">Sign out</a>
+
+<p id="errorUser" class="error">You are not registered and cannot track your progress</p>
+
+<p>This page has code examples for you to try out.
+In this stage, we add functions and one more external package.</p>
+<p>Typing code helps you learn, so rather than giving you text to copy
+and paste the code is an image that you must read, hold in your mind,
+type in to your editor and then manually check for accuracy.</p>
+<p>When we type, we make mistakes and that's OK – finding what we've done
+wrong is part of programming so this is a useful experience.</p>
+<p>Always test your program with a few different inputs to see that it behaves as
+expected.</p>
+<p>As always, we encourage your feedback on the process and the examples.</p>
+
+<section class="examples">
+
+<section data-stage="stage-3" data-example="1-is-prime.js.md">
+  <h2>Prime check  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Prime numbers are positive integers only divisible by 1 and themselves, and
+no other integers. 4 is not a prime because it is 2*2; 5 is a prime.</p>
+  <img alt="Prime check" src="../img/stage-3-1-is-prime.js.png">
+</section>
+
+<section data-stage="stage-3" data-example="2-reverse-array.js.md">
+  <h2>Reverse an array  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>If we have an array <code>[1, 2, 3]</code> and we reverse it, we should get
+<code>[3, 2, 1]</code>.</p>
+  <img alt="Reverse an array" src="../img/stage-3-2-reverse-array.js.png">
+</section>
+
+<section data-stage="stage-3" data-example="3-is-palindrome.js.md">
+  <h2>Palindrome check  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>A word is a palindrome if it reads the same forwards and backwards, e.g.
+racecar. We reuse the <code>reverseArray()</code> function to reverse a
+string.</p>
+  <img alt="Palindrome check" src="../img/stage-3-3-is-palindrome.js.png">
+  <p>Can you change the program so that an empty string is not reported as a palindrome?</p>
+</section>
+
+<section data-stage="stage-3" data-example="4-dice-roll.js.md">
+  <h2>Dice roll  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Create a simple <code>diceRoll()</code> function to simulate a roll of a
+single dice. We will use it later.</p>
+  <img alt="Dice roll" src="../img/stage-3-4-dice-roll.js.png">
+</section>
+
+<section data-stage="stage-3" data-example="5-dice-counts.js.md">
+  <h2>Is the dice loaded?  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Let's see if the dice favour some number.</p>
+  <img alt="Is the dice loaded?" src="../img/stage-3-5-dice-counts.js.png">
+</section>
+
+<section data-stage="stage-3" data-example="6-dice-histogram.js.md">
+  <h2>Is the dice loaded? (graph)  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Let's see if the dice favour some number, this time as a nice graph.</p>
+  <img alt="Is the dice loaded? (graph)" src="../img/stage-3-6-dice-histogram.js.png">
+  <p>Instead of rolling just one dice, can you change the program to roll two
+dice at a time? We should see that 2 (=1+1) and 12 (=6+6) are the least
+common results.</p>
+</section>
+
+<section data-stage="stage-3" data-example="7-draw-tower.js.md">
+  <h2>Draw a tower  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Just for fun, draw a word tower of characters.</p>
+  <img alt="Draw a tower" src="../img/stage-3-7-draw-tower.js.png">
+</section>
+
+<section data-stage="stage-3" data-example="8-draw-color-towers.js.md">
+  <h2>Draw a colourful tower  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>Add a splash of <a href="https://npmjs.com/package/colors">colour</a>.
+Note that much of this program is similar to the previous one; there are
+comments where the same code starts and where it starts to differ again.</p>
+  <img alt="Draw a colourful tower" src="../img/stage-3-8-draw-color-towers.js.png">
+</section>
+
+<h1>Advanced variations</h1>
+
+<section data-stage="stage-3" data-example="9-draw-more-towers.js.md">
+  <h2>Draw several colourful towers  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>To draw several towers side-by-side so their bottoms align, we need to
+find out how high the tallest tower is, and then print empty layers above
+the shorter towers.</p>
+<p>Note that much of this program is similar to the previous one; there are
+comments where the same code starts and where it starts to differ again.</p>
+  <img alt="Draw several colourful towers" src="../img/stage-3-9-draw-more-towers.js.png">
+  <p>The code that splits the input into words, and creates tower descriptions
+for each word, is intentionally advanced. Try to rewrite the
+<code>split()</code> and the <code>map()</code> lines using loops.</p>
+</section>
+
+<section data-stage="stage-3" data-example="10-hanoi-towers.js.md">
+  <h2>Play <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Tower of Hanoi</a>  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>We use the ideas from the examples above to make a program that plays the
+<a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Tower of Hanoi</a> puzzle.</p>
+<p>You don't have to type the huge block comment at the beginning unless you
+want to practice typing.</p>
+  <img alt="Play Tower of Hanoi" src="../img/stage-3-10-hanoi-towers.js.png">
+  <p>The program solves the puzzle itself, but we could let the user play it.
+Can you make an interactive version that would keep asking the user for a
+single move, do the move, and stop when the tower is completely moved?</p>
+</section>
+
+<section data-stage="stage-3" data-example="11-hanoi-towers-recursive.js.md">
+  <h2>A better solution to <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Tower of Hanoi</a>  <input class="checkbox hidden" type="checkbox"></h2>
+  <p>The code above can only solve towers of height 4, and fails with larger or
+smaller towers. Functions like <code>moveTwoBlocks</code> quickly become
+repetitive; we just <em>know</em> that computers can do better.</p>
+<p>This program solves the puzzle <em>recursively</em> – by having a function
+<code>moveBlocks</code> that calls itself to do a part of its task.</p>
+  <img alt="A better solution to Tower of Hanoi" src="../img/stage-3-11-hanoi-towers-recursive.js.png">
+  <p>Well done getting all the way through, thank you! Let us know how you like
+these examples.</p>
+</section>
+
+</section>
+
+<script type=module src="../js/authentication.js"></script>

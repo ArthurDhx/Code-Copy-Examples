@@ -1,0 +1,12 @@
+{
+  "title": "only metadata",
+  "imageAlt": "only metadata",
+  "docLinks": [],
+  "extras": [],
+  "metadata": {
+    "badges": [ "for-loop", "while-loop" ],
+    "category": "foobar",
+    "difficulty": "easy",
+    "extraHeading": "Advanced"
+  }
+}

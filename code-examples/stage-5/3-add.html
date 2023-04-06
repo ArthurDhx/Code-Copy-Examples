@@ -1,0 +1,32 @@
+<!doctype html>
+<title>Calculator</title>
+
+<h1>Calculator</h1>
+
+<input id="n1" placeholder="enter a number…" type="number">
+<input id="n2" placeholder="another number…" type="number">
+<button id="plus">add</button>
+<button id="minus">subtract</button>
+<p id="output"></p>
+
+<script>
+  function getFirstNumber() {
+    return document.querySelector('#n1').valueAsNumber;
+  }
+  function getSecondNumber() {
+    return document.querySelector('#n2').valueAsNumber;
+  }
+  function output(text) {
+    document.querySelector('#output').textContent = text;
+  }
+
+  function add() {
+    output(getFirstNumber() + getSecondNumber());
+  }
+  function subtract() {
+    output(getFirstNumber() - getSecondNumber());
+  }
+
+  document.querySelector('#plus').addEventListener('click', add);
+  document.querySelector('#minus').addEventListener('click', subtract);
+</script>

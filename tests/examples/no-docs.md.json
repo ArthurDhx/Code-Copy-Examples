@@ -1,0 +1,14 @@
+{
+  "title": "Is a number even or odd?",
+  "imageAlt": "Is a number even or odd?",
+  "docLinks": [],
+  "extras": [],
+  "metadata": {
+    "badges": [ "for-loop", "while-loop" ],
+    "category": "foobar",
+    "difficulty": "easy",
+    "extraHeading": "Advanced"
+  },
+  "preHTML": "<p>any description goes here, including <strong>formatting</strong>\nit even works with multiple lines!</p>",
+  "postHTML": "<p>any further stuff goes here\nadd informations to let the students learn about the code they're writing</p>"
+}
